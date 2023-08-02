@@ -4,6 +4,10 @@ import {fetchAfricanCountries} from "../../apiCalls"
 import { cleanData, getRandomNumber } from '../../utils';
 import { useEffect, useState } from 'react';
 import { Homepage } from '../Homepage/Homepage';
+import { NavBar } from '../NavBar/NavBar';
+import { Routes, Route } from 'react-router-dom';
+import { SavedPage } from '../SavedPage/SavedPage';
+import { ErrorPage } from '../ErrorPage/ErrorPage';
 
 function App() {
   const [singleFlag, setSingleFlag] = useState([]);
@@ -26,8 +30,13 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <h1>FlagQuest Africa</h1>
-      <Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} />
+      <Routes>
+        <Route path="/" element={<Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} />}/>
+        <Route path="/saved" element={<SavedPage />}/>
+        <Route path="/*" element={<ErrorPage />}/>
+      </Routes>
     </div>
   );
 }
