@@ -12,9 +12,12 @@ import { ErrorPage } from '../ErrorPage/ErrorPage';
 function App() {
   const [singleFlag, setSingleFlag] = useState([]);
   const [savedFlags, setSavedFlag] = useState([])
-  
+  const [alert, setAlert] = useState("");
+
+
   const addFlag = (newFlag) => {
-    setSavedFlag([...savedFlags, newFlag])    
+  setSavedFlag((prev)=> [...prev, newFlag])
+    
   }
   const getFlag = () => {
     fetchAfricanCountries().then((data) => {
@@ -23,8 +26,13 @@ function App() {
       setSingleFlag(cleanedCountry);
     });
   };
+  
   useEffect(() => {
     getFlag()
+  }, [])
+
+  useEffect(() => {
+    console.log("alert in app", alert)
   }, [])
 
 
@@ -33,8 +41,8 @@ function App() {
       <NavBar />
       <h1>FlagQuest Africa</h1>
       <Routes>
-        <Route path="/" element={<Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} />}/>
-        <Route path="/saved" element={<SavedPage />}/>
+        <Route path="/" element={<Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} alert={alert} setAlert={setAlert} />}/>
+        <Route path="/saved" element={<SavedPage savedFlags={savedFlags} singleFlag={singleFlag} setSingleFlag={setSingleFlag} alert={alert} setAlert={setAlert}/>}/>
         <Route path="/*" element={<ErrorPage />}/>
       </Routes>
     </div>
