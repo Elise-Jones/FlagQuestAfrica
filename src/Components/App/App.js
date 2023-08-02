@@ -7,6 +7,7 @@ import { Homepage } from '../Homepage/Homepage';
 import { NavBar } from '../NavBar/NavBar';
 import { Routes, Route } from 'react-router-dom';
 import { SavedPage } from '../SavedPage/SavedPage';
+import { ErrorPage } from '../ErrorPage/ErrorPage';
 
 function App() {
   const [singleFlag, setSingleFlag] = useState([]);
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} />}/>
         <Route path="/saved" element={<SavedPage />}/>
+        <Route path="/*" element={<ErrorPage />}/>
       </Routes>
     </div>
   );
