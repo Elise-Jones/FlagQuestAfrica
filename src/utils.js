@@ -6,22 +6,22 @@ const cleanData = (dataObject ) => {
  
   const officialName = name.official
   const altText = flags.alt
+  const flagPng = flags.png
   const country = {
     id: Date.now,
     flagPic: flag,
     name: officialName,
-    altText
+    altText,
+    flagPng
   }
 
   return country
 }
-console.log(cleanData(oneCountry))
 
 const getRandomNumber = (data) => {
-  return Math.floor(Math.random() * data.length);
+  const index = Math.floor(Math.random() * data.length)
+  return data[index]
 }
-
-console.log(getRandomNumber(countryData))
 
 
 export { cleanData, getRandomNumber }

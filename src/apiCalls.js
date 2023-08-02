@@ -6,7 +6,6 @@ const fetchAfricanCountries = () => {
     } else {
       throw new Error("Sorry something went wrong")
     }
-  }).then(data => console.log(data))
-  
+  })  
 }
-fetchAfricanCountries()
+export { fetchAfricanCountries }
