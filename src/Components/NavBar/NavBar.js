@@ -1,7 +1,11 @@
 import React from 'react'
+import {  NavLink } from 'react-router-dom';
 
 export const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <nav>
+      <NavLink to="/">home</NavLink>
+      <NavLink to="saved">Saved for Later</NavLink>
+    </nav>
   )
 }

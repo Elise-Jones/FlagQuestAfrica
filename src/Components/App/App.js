@@ -4,6 +4,7 @@ import {fetchAfricanCountries} from "../../apiCalls"
 import { cleanData, getRandomNumber } from '../../utils';
 import { useEffect, useState } from 'react';
 import { Homepage } from '../Homepage/Homepage';
+import { NavBar } from '../NavBar/NavBar';
 
 function App() {
   const [singleFlag, setSingleFlag] = useState([]);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <h1>FlagQuest Africa</h1>
       <Homepage singleFlag={singleFlag} setSingleFlag={setSingleFlag} addFlag={addFlag} getFlag={getFlag} />
     </div>
