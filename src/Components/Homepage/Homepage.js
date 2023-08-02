@@ -1,24 +1,28 @@
-import React from 'react'
-import { FlagCard } from '../App/FlagCard/FlagCard'
-import {fetchAfricanCountries} from "../../apiCalls"
-import { cleanData, getRandomNumber } from '../../utils';
-import { useState } from 'react';
-export const Homepage = ({ singleFlag, setSingleFlag }) => {
-  
-  const [alert, setAlert] = useState("")
-  const fetchAgain =() => {
-    fetchAfricanCountries().then((data) => {
-      const country = getRandomNumber(data)
-      const cleanedCountry = cleanData(country)
-      setSingleFlag(cleanedCountry)
-    })
-    
-   }
+import React, { useEffect } from "react";
+import { FlagCard } from "../App/FlagCard/FlagCard";
+import { useState } from "react";
 
+export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, savedFlags, setSavedFlags,  }) => {
+  
+  const [alert, setAlert] = useState("");
+
+  const handleClick =() => {
+    const newFlag = singleFlag
+    addFlag(newFlag)
+    setAlert("")
+    getFlag()
+  }
   return (
     <div className="container">
-      <FlagCard singleFlag={singleFlag} setSingleFlag={setSingleFlag} alert={alert} setAlert={setAlert}/>
-      <button onClick={fetchAgain}>Show me new </button>
+      <FlagCard
+        singleFlag={singleFlag}
+        setSingleFlag={setSingleFlag}
+        alert={alert}
+        setAlert={setAlert}
+      />
+      <button onClick={getFlag}>Show me new </button>
+      {/* <button onClick={()=>{setSingleFlag([])}}>mam</button> */}
+      <button onClick={handleClick}>Save for later </button>
     </div>
-  )
-}
+  );
+};
