@@ -11,6 +11,9 @@ export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag }) => {
       deleteFlag={deleteFlag}
     />
   ));
-  return <div className="saved-container">{savedFlags.length === 0 ? <p>nothing to see here</p> : allSaved}
-  </div>
+  return (
+    <div className="saved-container">
+      {savedFlags.length === 0 ? <p>You're doing great! No saved countries, yet.</p> : allSaved}
+    </div>
+  );
 };

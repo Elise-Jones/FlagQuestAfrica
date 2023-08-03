@@ -3,14 +3,9 @@ import "./FlagCard.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
-export const FlagCard = ({
-  singleFlag,
-  deleteFlag,
-  addFlag,
-  getFlag,
-}) => {
+export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const { id, flagPng, altText, name } = singleFlag;
-  const [alert, setAlert] = React.useState("");
+  const [alert, setAlert] = useState("");   
   const [userAnswer, setUserAnswer] = useState("");
   const [answer, setAnswer ] = useState("")
   const location = useLocation();
@@ -23,10 +18,6 @@ export const FlagCard = ({
     setUserAnswer("");
   };
 
-  // const displayAnswer = () => {
-
-  // }
-
   const handleClick = () => {
     const newFlag = singleFlag;
     addFlag(newFlag);
@@ -35,6 +26,10 @@ export const FlagCard = ({
     getFlag();
   };
 
+  const showAnswer = () => {
+    setAnswer(name)
+    setAlert("")
+  }
   return (
     <div className="flag-card">
       <img src={flagPng} alt={altText} />
@@ -52,8 +47,9 @@ export const FlagCard = ({
         
         
       </form>
-      <button onClick={()=>{setAnswer(name)}}>checkanswer</button>
-      <h2>{answer}</h2>
+      <button onClick={showAnswer
+        }>Show Answer</button>
+      <p>{answer}</p>
       {location.pathname.includes("saved") ? (
         <button
           onClick={() => {

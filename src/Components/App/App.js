@@ -11,7 +11,6 @@ import { ErrorPage } from "../ErrorPage/ErrorPage";
 function App() {
   const [singleFlag, setSingleFlag] = useState([]);
   const [savedFlags, setSavedFlag] = useState([]);
-  const [alert, setAlert] = useState("");
 
   const addFlag = (newFlag) => {
     setSavedFlag((prev) => [...prev, newFlag]);
@@ -47,8 +46,6 @@ function App() {
               setSingleFlag={setSingleFlag}
               addFlag={addFlag}
               getFlag={getFlag}
-              alert={alert}
-              setAlert={setAlert}
             />
           }
         />
@@ -59,8 +56,6 @@ function App() {
               savedFlags={savedFlags}
               singleFlag={singleFlag}
               setSingleFlag={setSingleFlag}
-              alert={alert}
-              setAlert={setAlert}
               deleteFlag={deleteFlag}
             />
           }
