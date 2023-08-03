@@ -4,7 +4,7 @@ import "./SavedPage.css";
 export const SavedPage = ({ savedFlags, setSingleFlag, alert, setAlert, alreadySavedAlert, setAlreadySavedAlert, deleteFlag }) => {
   const allSaved = savedFlags.map((flag) => (
     <FlagCard
-      key={flag.Id}
+      key={flag.id}
       id={flag.name}
       singleFlag={flag}
       setSingleFlag={setSingleFlag}
@@ -15,6 +15,6 @@ export const SavedPage = ({ savedFlags, setSingleFlag, alert, setAlert, alreadyS
       deleteFlag={deleteFlag}
     />
   ));
-  return <div className="saved-container">{allSaved}
+  return <div className="saved-container">{savedFlags.length === 0 ? <p>nothing to see here</p> : allSaved}
   </div>
 };
