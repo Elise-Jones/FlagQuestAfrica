@@ -34,6 +34,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const showNew = () => {
     getFlag()
     setAnswer("")
+    setAlert("")
   }
   return (
     <div className="flag-card">

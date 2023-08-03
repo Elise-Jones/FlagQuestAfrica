@@ -13,7 +13,12 @@ const App = () => {
   const [savedFlags, setSavedFlag] = useState([]);
 
   const addFlag = (newFlag) => {
-    setSavedFlag((prev) => [...prev, newFlag]);
+    const isSaved = savedFlags.some(flag => flag.name === newFlag.name)
+    if (!isSaved) {
+      setSavedFlag((prev) => [...prev, newFlag])
+  } else {
+    console.log("hello")
+  }
   };
 
   const deleteFlag = (name) => {

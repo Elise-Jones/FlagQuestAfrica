@@ -8,7 +8,7 @@ const cleanData = (dataObject ) => {
   const altText = flags.alt
   const flagPng = flags.png
   const country = {
-    id: Date.now,
+    id: officialName,
     flagPic: flag,
     name: officialName,
     altText,
