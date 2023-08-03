@@ -1,17 +1,13 @@
 import React from "react";
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import "./SavedPage.css";
-export const SavedPage = ({ savedFlags, setSingleFlag, alert, setAlert, alreadySavedAlert, setAlreadySavedAlert, deleteFlag }) => {
+export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag }) => {
   const allSaved = savedFlags.map((flag) => (
     <FlagCard
-      key={flag.id}
+      key={flag.name}
       id={flag.name}
       singleFlag={flag}
       setSingleFlag={setSingleFlag}
-      alert={alert}
-      setAlert={setAlert}
-      alreadySavedAlert={alreadySavedAlert}
-      setAlreadySavedAlert={setAlreadySavedAlert}
       deleteFlag={deleteFlag}
     />
   ));
