@@ -1,13 +1,6 @@
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import './Homepage.css';
-export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert, alert  }) => {
-  
-  // const handleClick =() => {
-  //   const newFlag = singleFlag
-  //   addFlag(newFlag)
-  //   // setAlert("")
-  //   getFlag()
-  // }
+export const Homepage = ({ singleFlag, addFlag, getFlag, setAlert, alert  }) => {
 
   return (
     <div className="container">

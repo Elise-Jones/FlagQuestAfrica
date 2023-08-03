@@ -11,21 +11,27 @@ export const FlagCard = ({
 }) => {
   const { id, flagPng, altText, name } = singleFlag;
   const [alert, setAlert] = React.useState("");
-  const [flagAnswer, setFlagAnswer] = useState("");
+  const [userAnswer, setUserAnswer] = useState("");
+  const [answer, setAnswer ] = useState("")
   const location = useLocation();
 
   const checkAnswer = (event) => {
     event.preventDefault();
     const alertMessage =
-      flagAnswer !== name ? "You are incorrect, try again" : "you are correct";
+      userAnswer !== name ? "You are incorrect, try again" : "you are correct";
     setAlert(alertMessage);
-    setFlagAnswer("");
+    setUserAnswer("");
   };
+
+  // const displayAnswer = () => {
+
+  // }
 
   const handleClick = () => {
     const newFlag = singleFlag;
     addFlag(newFlag);
     setAlert("");
+    setAnswer("")
     getFlag();
   };
 
@@ -34,15 +40,20 @@ export const FlagCard = ({
       <img src={flagPng} alt={altText} />
       <form onSubmit={checkAnswer}>
         <input
-          name="country "
+          name="country"
           type="text"
           placeholder="What country?"
-          value={flagAnswer}
-          onChange={(e) => setFlagAnswer(e.target.value)}
+          value={userAnswer}
+          onChange={(e) => setUserAnswer(e.target.value)}
         ></input>
         <button type="submit">Submit</button>
+       
         <p>{alert}</p>
+        
+        
       </form>
+      <button onClick={()=>{setAnswer(name)}}>checkanswer</button>
+      <h2>{answer}</h2>
       {location.pathname.includes("saved") ? (
         <button
           onClick={() => {
