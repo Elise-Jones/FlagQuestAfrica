@@ -14,11 +14,8 @@ const App = () => {
 
   const addFlag = (newFlag) => {
     const isSaved = savedFlags.some(flag => flag.name === newFlag.name)
-    if (!isSaved) {
-      setSavedFlag((prev) => [...prev, newFlag])
-  } else {
-    console.log("hello")
-  }
+  !isSaved && setSavedFlag((prev) => [...prev, newFlag])
+
   };
 
   const deleteFlag = (name) => {
