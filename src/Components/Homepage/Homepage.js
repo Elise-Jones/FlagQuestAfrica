@@ -1,18 +1,21 @@
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import './Homepage.css';
-export const Homepage = ({ singleFlag, addFlag, getFlag, setAlert, alert  }) => {
+export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert, alert  }) => {
+  
+
 
   return (
-    <div className="container">
+    <main className="homepage-container">
+      {/* img here */}
       <FlagCard
         singleFlag={singleFlag}
+        setSingleFlag={setSingleFlag}
         alert={alert}
         setAlert={setAlert}
-        addFlag={addFlag}
         getFlag={getFlag}
+        addFlag={addFlag}
       />
-      
-      
-    </div>
+    
+    </main>
   );
 };

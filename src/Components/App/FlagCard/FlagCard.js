@@ -1,5 +1,3 @@
-import React from "react";
-import "./FlagCard.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
