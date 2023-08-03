@@ -11,7 +11,7 @@ export const Homepage = ({ singleFlag, addFlag, getFlag, setAlert, alert  }) => 
         addFlag={addFlag}
         getFlag={getFlag}
       />
-      <button onClick={getFlag}>Show me new </button>
+      
       
     </div>
   );

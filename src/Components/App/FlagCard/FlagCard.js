@@ -13,12 +13,12 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const checkAnswer = (event) => {
     event.preventDefault();
     const alertMessage =
-      userAnswer !== name ? "You are incorrect, try again" : "you are correct";
+      userAnswer !== name ? "You are incorrect, try again" : "You are correct!";
     setAlert(alertMessage);
     setUserAnswer("");
   };
 
-  const handleClick = () => {
+  const saveFlag = () => {
     const newFlag = singleFlag;
     addFlag(newFlag);
     setAlert("");
@@ -29,6 +29,11 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const showAnswer = () => {
     setAnswer(name)
     setAlert("")
+  }
+
+  const showNew = () => {
+    getFlag()
+    setAnswer("")
   }
   return (
     <div className="flag-card">
@@ -42,10 +47,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
           onChange={(e) => setUserAnswer(e.target.value)}
         ></input>
         <button type="submit">Submit</button>
-       
         <p>{alert}</p>
-        
-        
       </form>
       <button onClick={showAnswer
         }>Show Answer</button>
@@ -59,7 +61,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
           delete
         </button>
       ) : (
-        <button onClick={handleClick}>Save for later </button>
+        <div><button onClick={saveFlag}>Save for later </button> <button onClick={showNew}>Show me new </button> </div>
       )}
     </div>
   );

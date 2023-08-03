@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { SavedPage } from "../SavedPage/SavedPage";
 import { ErrorPage } from "../ErrorPage/ErrorPage";
 
-function App() {
+const App = () => {
   const [singleFlag, setSingleFlag] = useState([]);
   const [savedFlags, setSavedFlag] = useState([]);
 
