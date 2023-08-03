@@ -13,5 +13,6 @@ export const SavedPage = ({ savedFlags, setSingleFlag, alert, setAlert, alreadyS
       setAlreadySavedAlert={setAlreadySavedAlert}
     />
   ));
-  return <div className="saved-container">{allSaved}</div>;
+  return <div className="saved-container">{allSaved}
+  </div>
 };
