@@ -4,3 +4,11 @@ body {
 h1 {
   text-align: center;
 }
+
+button {
+  background-color: white;
+  height: 3em;
+  border-radius: 1em;
+  padding: 1 em;
+  margin: 1em;
+}
