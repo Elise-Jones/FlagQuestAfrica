@@ -4,7 +4,7 @@ const fetchAfricanCountries = () => {
     if(resp.ok){
       return resp.json()
     } else {
-      throw new Error("Sorry something went wrong")
+      throw new Error(`Server error: ${resp.status}`)
     }
   })  
 }
