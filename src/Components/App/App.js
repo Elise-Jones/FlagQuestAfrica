@@ -59,6 +59,7 @@ const App = () => {
               singleFlag={singleFlag}
               setSingleFlag={setSingleFlag}
               deleteFlag={deleteFlag}
+              getFlag={getFlag}
             />
           }
         />

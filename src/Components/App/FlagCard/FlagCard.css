@@ -1,5 +1,22 @@
 .flag-card {   padding: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* border: 3px solid black; */
-  padding: 10px;
+  padding: 10px ;
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+}
+.answer-holder {
+  display: flex;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 40px;
+}
+
+img {
+  width: 40%;
 }

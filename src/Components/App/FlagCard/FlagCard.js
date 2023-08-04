@@ -1,7 +1,6 @@
-import React from "react";
-import "./FlagCard.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
+import "./FlagCard.css"
 
 export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const { id, flagPng, altText, name } = singleFlag;
@@ -36,9 +35,11 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
     setAnswer("")
     setAlert("")
   }
+
   return (
-    <div className="flag-card">
+    <article className="flag-card">
       <img src={flagPng} alt={altText} />
+      <div className="form-container">
       <form onSubmit={checkAnswer}>
         <input
           name="country"
@@ -50,9 +51,11 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
         <button type="submit">Submit</button>
         <p>{alert}</p>
       </form>
+      <div className="answer-holder">
       <button onClick={showAnswer
         }>Show Answer</button>
       <p>{answer}</p>
+      </div>
       {location.pathname.includes("saved") ? (
         <button
           onClick={() => {
@@ -64,6 +67,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
       ) : (
         <div><button onClick={saveFlag}>Save for later </button> <button onClick={showNew}>Show me new </button> </div>
       )}
-    </div>
+      </div>
+    </article>
   );
 };

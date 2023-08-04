@@ -2,7 +2,7 @@ import React from "react";
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import "./SavedPage.css";
 
-export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag }) => {
+export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getFlag }) => {
   
   const allSaved = savedFlags.map((flag) => (
     <FlagCard
@@ -11,12 +11,14 @@ export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag }) => {
       singleFlag={flag}
       setSingleFlag={setSingleFlag}
       deleteFlag={deleteFlag}
+      addFlag={addFlag}
+      getFlag={getFlag}
     />
   ));
   
   return (
-    <div className="saved-container">
+    <main className="saved-container">
       {savedFlags.length === 0 ? <p>You're doing great! No saved countries, yet.</p> : allSaved}
-    </div>
+    </main>
   );
 };
