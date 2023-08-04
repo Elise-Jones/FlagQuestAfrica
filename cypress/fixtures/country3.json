@@ -1,0 +1,376 @@
+[
+  {
+    "name": {
+      "common": "Ivory Coast",
+      "official": "Republic of Côte d'Ivoire",
+      "nativeName": {
+        "fra": {
+          "official": "République de Côte d'Ivoire",
+          "common": "Côte d'Ivoire"
+        }
+      }
+    },
+    "tld": [".ci"],
+    "cca2": "CI",
+    "ccn3": "384",
+    "cca3": "CIV",
+    "cioc": "CIV",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "XOF": {
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    },
+    "idd": {
+      "root": "+2",
+      "suffixes": ["25"]
+    },
+    "capital": ["Yamoussoukro"],
+    "altSpellings": [
+      "CI",
+      "Côte d'Ivoire",
+      "Ivory Coast",
+      "Republic of Côte d'Ivoire",
+      "République de Côte d'Ivoire"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": {
+      "fra": "French"
+    },
+    "translations": {
+      "ara": {
+        "official": "جمهورية ساحل العاج",
+        "common": "ساحل العاج"
+      },
+      "bre": {
+        "official": "Republik Aod an Olifant",
+        "common": "Aod an Olifant"
+      },
+      "ces": {
+        "official": "Republika Pobřeží slonoviny",
+        "common": "Pobřeží slonoviny"
+      },
+      "cym": {
+        "official": "Republic of Côte d'Ivoire",
+        "common": "Ivory Coast"
+      },
+      "deu": {
+        "official": "Republik Côte d'Ivoire",
+        "common": "Elfenbeinküste"
+      },
+      "est": {
+        "official": "Côte d’Ivoire’i Vabariik",
+        "common": "Elevandiluurannik"
+      },
+      "fin": {
+        "official": "Norsunluurannikon tasavalta",
+        "common": "Norsunluurannikko"
+      },
+      "fra": {
+        "official": "République de Côte d' Ivoire",
+        "common": "Côte d'Ivoire"
+      },
+      "hrv": {
+        "official": "Republika Côte d'Ivoire",
+        "common": "Obala Bjelokosti"
+      },
+      "hun": {
+        "official": "Elefántcsontparti Köztársaság",
+        "common": "Elefántcsontpart"
+      },
+      "ita": {
+        "official": "Repubblica della Costa d'Avorio",
+        "common": "Costa d'Avorio"
+      },
+      "jpn": {
+        "official": "コートジボワール共和国",
+        "common": "コートジボワール"
+      },
+      "kor": {
+        "official": "코트디부아르 공화국",
+        "common": "코트디부아르"
+      },
+      "nld": {
+        "official": "Republiek Ivoorkust",
+        "common": "Ivoorkust"
+      },
+      "per": {
+        "official": "جمهوری ساحل عاج",
+        "common": "ساحل عاج"
+      },
+      "pol": {
+        "official": "Republika WybrzeŻa Kości Słoniowej",
+        "common": "WybrzeŻe Kości Słoniowej"
+      },
+      "por": {
+        "official": "República da Côte d'Ivoire",
+        "common": "Costa do Marfim"
+      },
+      "rus": {
+        "official": "Республика Кот-д'Ивуаре",
+        "common": "Кот-д’Ивуар"
+      },
+      "slk": {
+        "official": "Republika Pobrežie Slonoviny",
+        "common": "Pobržie Slonoviny"
+      },
+      "spa": {
+        "official": "República de Côte d'Ivoire",
+        "common": "Costa de Marfil"
+      },
+      "srp": {
+        "official": "Република Обала Слоноваче",
+        "common": "Обала Слоноваче"
+      },
+      "swe": {
+        "official": "Republiken Elfenbenskusten",
+        "common": "Elfenbenskusten"
+      },
+      "tur": {
+        "official": "Fildişi Sahili",
+        "common": "Fildişi Sahili"
+      },
+      "urd": {
+        "official": "جمہوریہ کوت دیواغ",
+        "common": "آئیوری کوسٹ"
+      },
+      "zho": {
+        "official": "科特迪瓦共和国",
+        "common": "科特迪瓦"
+      }
+    },
+    "latlng": [8.0, -5.0],
+    "landlocked": false,
+    "borders": ["BFA", "GHA", "GIN", "LBR", "MLI"],
+    "area": 322463.0,
+    "demonyms": {
+      "eng": {
+        "f": "Ivorian",
+        "m": "Ivorian"
+      },
+      "fra": {
+        "f": "Ivoirienne",
+        "m": "Ivoirien"
+      }
+    },
+    "flag": "🇨🇮",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/wKsmN7f5qAeNtGjP6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/192779"
+    },
+    "population": 26378275,
+    "gini": {
+      "2015": 41.5
+    },
+    "fifa": "CIV",
+    "car": {
+      "signs": ["CI"],
+      "side": "right"
+    },
+    "timezones": ["UTC"],
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ci.png",
+      "svg": "https://flagcdn.com/ci.svg",
+      "alt": "The flag of Ivory Coast is composed of three equal vertical bands of orange, white and green."
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/ci.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/ci.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [6.82, -5.27]
+    }
+  },
+  {
+    "name": {
+      "common": "Mauritania",
+      "official": "Islamic Republic of Mauritania",
+      "nativeName": {
+        "ara": {
+          "official": "الجمهورية الإسلامية الموريتانية",
+          "common": "موريتانيا"
+        }
+      }
+    },
+    "tld": [".mr"],
+    "cca2": "MR",
+    "ccn3": "478",
+    "cca3": "MRT",
+    "cioc": "MTN",
+    "independent": true,
+    "status": "officially-assigned",
+    "unMember": true,
+    "currencies": {
+      "MRU": {
+        "name": "Mauritanian ouguiya",
+        "symbol": "UM"
+      }
+    },
+    "idd": {
+      "root": "+2",
+      "suffixes": ["22"]
+    },
+    "capital": ["Nouakchott"],
+    "altSpellings": [
+      "MR",
+      "Islamic Republic of Mauritania",
+      "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": {
+      "ara": "Arabic"
+    },
+    "translations": {
+      "ara": {
+        "official": "الجمهورية الإسلامية الموريتانية",
+        "common": "موريتانيا"
+      },
+      "bre": {
+        "official": "Republik islamek Maouritania",
+        "common": "Maouritania"
+      },
+      "ces": {
+        "official": "Mauritánská islámská republika",
+        "common": "Mauritánie"
+      },
+      "cym": {
+        "official": "Islamic Republic of Mauritania",
+        "common": "Mauritania"
+      },
+      "deu": {
+        "official": "Islamische Republik Mauretanien",
+        "common": "Mauretanien"
+      },
+      "est": {
+        "official": "Mauritaania Islamivabariik",
+        "common": "Mauritaania"
+      },
+      "fin": {
+        "official": "Mauritanian islamilainen tasavalta",
+        "common": "Mauritania"
+      },
+      "fra": {
+        "official": "République islamique de Mauritanie",
+        "common": "Mauritanie"
+      },
+      "hrv": {
+        "official": "Islamska Republika Mauritanija",
+        "common": "Mauritanija"
+      },
+      "hun": {
+        "official": "Mauritániai Iszlám Köztársaság",
+        "common": "Mauritánia"
+      },
+      "ita": {
+        "official": "Repubblica islamica di Mauritania",
+        "common": "Mauritania"
+      },
+      "jpn": {
+        "official": "モーリタニア·イスラム共和国",
+        "common": "モーリタニア"
+      },
+      "kor": {
+        "official": "모리타니 이슬람 공화국",
+        "common": "모리타니"
+      },
+      "nld": {
+        "official": "Islamitische Republiek Mauritanië",
+        "common": "Mauritanië"
+      },
+      "per": {
+        "official": "جمهوری اسلامی موریتانی",
+        "common": "موریتانی"
+      },
+      "pol": {
+        "official": "Islamska Republika Mauretańska",
+        "common": "Mauretania"
+      },
+      "por": {
+        "official": "República Islâmica da Mauritânia",
+        "common": "Mauritânia"
+      },
+      "rus": {
+        "official": "Исламская Республика Мавритания",
+        "common": "Мавритания"
+      },
+      "slk": {
+        "official": "Mauritánska islamská republika",
+        "common": "Mauritánia"
+      },
+      "spa": {
+        "official": "República Islámica de Mauritania",
+        "common": "Mauritania"
+      },
+      "srp": {
+        "official": "Исламска Република Мауританија",
+        "common": "Мауританија"
+      },
+      "swe": {
+        "official": "Islamiska republiken Mauretanien",
+        "common": "Mauretanien"
+      },
+      "tur": {
+        "official": "Moritanya İslam Cumhuriyeti",
+        "common": "Moritanya"
+      },
+      "urd": {
+        "official": "اسلامی جمہوریہ موریتانیہ",
+        "common": "موریتانیہ"
+      },
+      "zho": {
+        "official": "毛里塔尼亚伊斯兰共和国",
+        "common": "毛里塔尼亚"
+      }
+    },
+    "latlng": [20.0, -12.0],
+    "landlocked": false,
+    "borders": ["DZA", "MLI", "SEN", "ESH"],
+    "area": 1030700.0,
+    "demonyms": {
+      "eng": {
+        "f": "Mauritanian",
+        "m": "Mauritanian"
+      },
+      "fra": {
+        "f": "Mauritanienne",
+        "m": "Mauritanien"
+      }
+    },
+    "flag": "🇲🇷",
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/im2MmQ5jFjzxWBks5",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/192763"
+    },
+    "population": 4649660,
+    "gini": {
+      "2014": 32.6
+    },
+    "fifa": "MTN",
+    "car": {
+      "signs": ["RIM"],
+      "side": "right"
+    },
+    "timezones": ["UTC"],
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/mr.png",
+      "svg": "https://flagcdn.com/mr.svg",
+      "alt": "The flag of Mauritania has a green field with a thin red horizontal band at the top and bottom of the field. At the center of the field is a five-pointed yellow star above an upward facing yellow crescent."
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/mr.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/mr.svg"
+    },
+    "startOfWeek": "monday",
+    "capitalInfo": {
+      "latlng": [18.07, -15.97]
+    }
+  }
+]
