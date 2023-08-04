@@ -26,8 +26,9 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   };
 
   const showAnswer = () => {
-    setAnswer(name)
     setAlert("")
+    setAnswer(name)
+    
   }
 
   const showNew = () => {
