@@ -58,7 +58,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
       <p>{answer}</p>
       </div>
       {location.pathname.includes("saved") ? (
-        <button
+        <button className="delete-button"
           onClick={() => {
             deleteFlag(name);
           }}

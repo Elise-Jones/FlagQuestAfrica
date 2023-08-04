@@ -95,5 +95,6 @@ describe("template spec", () => {
       .find(".homenav")
       .click();
     cy.url().should("include", "/");
+    // neee to test that it wills how answer
   });
 });
