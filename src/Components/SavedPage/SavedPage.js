@@ -1,6 +1,7 @@
 import React from "react";
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import "./SavedPage.css";
+import PropTypes from 'prop-types';
 
 export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getFlag }) => {
   
@@ -22,3 +23,11 @@ export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getF
     </main>
   );
 };
+
+SavedPage.propTypes = {
+  savedFlags: PropTypes.arrayOf(PropTypes.object),
+  setSingleFlag: PropTypes.func.isRequired,
+  deleteFlag: PropTypes.func.isRequired,
+  addFlag: PropTypes.func.isRequired, 
+  getFlag: PropTypes.func.isRequired,
+}

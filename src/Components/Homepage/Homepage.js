@@ -1,21 +1,33 @@
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import './Homepage.css';
-export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert, alert  }) => {
+import PropTypes from 'prop-types';
+
+export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, alert, deleteFlag }) => {
   
-
-
   return (
     <main className="homepage-container">
-      {/* img here */}
       <FlagCard
         singleFlag={singleFlag}
         setSingleFlag={setSingleFlag}
         alert={alert}
-        setAlert={setAlert}
         getFlag={getFlag}
         addFlag={addFlag}
+        deleteFlag={deleteFlag}
       />
-    
     </main>
   );
 };
+
+Homepage.propTypes = {
+  singleFlag: PropTypes.shape({
+    id: PropTypes.string,
+    flagPic: PropTypes.string,
+    name: PropTypes.string,
+    altText: PropTypes.string,
+    flagPng: PropTypes.string}),
+  setSingleFlag: PropTypes.func.isRequired,
+  alert: PropTypes.string,
+  getFlag: PropTypes.func.isRequired,
+  addFlag: PropTypes.func.isRequired,
+  deleteFlag: PropTypes.func.isRequired,
+}

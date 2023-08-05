@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import "./FlagCard.css"
@@ -28,7 +29,6 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   const showAnswer = () => {
     setAlert("")
     setAnswer(name)
-    
   }
 
   const showNew = () => {
@@ -72,3 +72,15 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
     </article>
   );
 };
+
+FlagCard.propTypes = {
+  singleFlag: PropTypes.shape({
+    id: PropTypes.string,
+    flagPic: PropTypes.string,
+    name: PropTypes.string,
+    altText: PropTypes.string,
+    flagPng: PropTypes.string}),
+  deleteFlag: PropTypes.func.isRequired,
+  addFlag: PropTypes.func.isRequired,
+  getFlag: PropTypes.func.isRequired
+}
