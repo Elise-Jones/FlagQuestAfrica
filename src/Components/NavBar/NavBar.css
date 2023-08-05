@@ -1,24 +1,39 @@
 .nav-container {
   display: flex;
   justify-content: center;
-  width: 100%; 
+  width: 100%;
   position: fixed;
   height: 10%;
   top: 0;
   margin: 0;
-  /* padding: 0 */
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
+  /* background-color: #ffffff; Fallback color if the image doesn't load or is not visible */
 }
 
-.homenav, .savenav {
+.homenav,
+.savenav {
   width: 10em;
-  height: 1em; 
+  height: 1em;
   text-decoration: none;
   padding: 0.5em 1.5em;
-  color: white;
-  /* border: 4px solid ; */
+  color: black;
+  border: 1px solid black;
   border-radius: 1em;
   text-align: center;
-  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg)
-  /* background-color: #fd9d23; */
+  /* background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg); */
+  /* You can remove the background-image from the .homenav and .savenav if you don't want the image as a background */
+  /* background-image: none; */
+  /* background-color: #ffffff; Fallback color if the image doesn't load or is not visible */
+}
+
+.homenav:hover,
+.savenav:hover {
+  background-color: #fcc96e;
+}
+
+.homenav.active,
+.savenav.active {
+  background-color: #fcc96e;
+  color: black;
 }

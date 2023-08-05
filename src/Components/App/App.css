@@ -1,15 +1,22 @@
+* {
+  font-family: Ysabeau Office;
+  font-weight: bold;
+}
 body {
   height: 100vh;
-  /* font-weight: bolder; */
 }
+
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
 h1 {
   text-align: center;
   padding-top: 5%;
+  padding-bottom: 2%;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
 }
 
 button {
@@ -22,7 +29,6 @@ button {
   border: none;
   outline: none;
 }
-
 
 .h {
   display: flex;

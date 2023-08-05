@@ -2,9 +2,18 @@ import React from "react";
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import "./SavedPage.css";
 import PropTypes from 'prop-types';
+import { useLocation } from "react-router-dom";
 
 export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getFlag }) => {
   
+  const location = useLocation()
+  let routeClassName = ''
+  if(location.pathname === "/saved" && savedFlags.length  === 0){
+    routeClassName = "no-saved"
+  } else {
+    routeClassName = "saved-container"
+  }
+
   const allSaved = savedFlags.map((flag) => (
     <FlagCard
       key={flag.name}
@@ -18,8 +27,11 @@ export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getF
   ));
   
   return (
-    <main className="saved-container">
-      {savedFlags.length === 0 ? <p>You're doing great! No saved countries, yet.</p> : allSaved}
+    
+    <main className={routeClassName}>
+      {
+      savedFlags.length === 0 ? <p> You're doing great! No saved countries, yet.</p> :
+       allSaved}
     </main>
   );
 };

@@ -5,3 +5,8 @@
   /* grid-gap: 20px;
   /* display: flex; */
 }
+
+.no-saved {
+  display: flex;
+  justify-content: center;
+}
