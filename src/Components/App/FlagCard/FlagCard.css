@@ -1,22 +1,41 @@
 .flag-card {   padding: 20px;
   /* box-sizing: border-box; */
   /* border: 3px solid black; */
+  border-radius: 2em ;
   padding: 10px ;
   width: 100% ;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .answer-holder {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 img {
-  width: 40%;
+  height: 20em;
+  width: 26em;
+}
+
+input {
+  border-radius: 1em;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
+  height: 3em;
+  width: 20em;
+}
+form {
+  width: 26em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

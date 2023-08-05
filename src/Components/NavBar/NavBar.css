@@ -1,16 +1,24 @@
 .nav-container {
   display: flex;
+  justify-content: center;
   width: 100%; 
   position: fixed;
-  height:10%;
-  /* background-color: blueviolet; */
+  height: 10%;
   top: 0;
   margin: 0;
-  background-image: url("/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover; 
+  /* padding: 0 */
+  box-sizing: border-box
 }
+
 .homenav, .savenav {
+  width: 10em;
+  height: 1em; 
   text-decoration: none;
   padding: 0.5em 1.5em;
+  color: white;
+  /* border: 4px solid ; */
+  border-radius: 1em;
+  text-align: center;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg)
+  /* background-color: #fd9d23; */
 }

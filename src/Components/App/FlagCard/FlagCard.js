@@ -40,6 +40,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   return (
     <article className="flag-card">
       <img src={flagPng} alt={altText} />
+      <div className="h">
       <div className="form-container">
       <form onSubmit={checkAnswer}>
         <input
@@ -56,6 +57,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
       <button onClick={showAnswer
         }>Show Answer</button>
       <p>{answer}</p>
+      </div>
       </div>
       {location.pathname.includes("saved") ? (
         <button className="delete-button"

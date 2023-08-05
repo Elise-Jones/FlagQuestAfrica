@@ -1,14 +1,32 @@
 body {
   height: 100vh;
+  /* font-weight: bolder; */
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 h1 {
   text-align: center;
+  padding-top: 5%;
 }
 
 button {
-  background-color: white;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
   height: 3em;
   border-radius: 1em;
   padding: 1 em;
   margin: 1em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+
+.h {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
 }
