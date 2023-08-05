@@ -1,6 +1,6 @@
 import { FlagCard } from "../App/FlagCard/FlagCard";
 import './Homepage.css';
-export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert, alert  }) => {
+export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert, alert, deleteFlag  }) => {
   
 
 
@@ -14,6 +14,7 @@ export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, setAlert
         setAlert={setAlert}
         getFlag={getFlag}
         addFlag={addFlag}
+        deleteFlag={deleteFlag}
       />
     
     </main>

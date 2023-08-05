@@ -9,14 +9,13 @@ import { SavedPage } from "../SavedPage/SavedPage";
 import { ErrorPage } from "../ErrorPage/ErrorPage";
 
 const App = () => {
-  const [singleFlag, setSingleFlag] = useState([]);
+  const [singleFlag, setSingleFlag] = useState({});
   const [savedFlags, setSavedFlag] = useState([]);
   const [error, setError] = useState(null);
 
   const addFlag = (newFlag) => {
     const isSaved = savedFlags.some(flag => flag.name === newFlag.name)
-  !isSaved && setSavedFlag((prev) => [...prev, newFlag])
-
+    !isSaved && setSavedFlag((prev) => [...prev, newFlag])
   };
 
   const deleteFlag = (name) => {
@@ -63,6 +62,7 @@ const App = () => {
                 setSingleFlag={setSingleFlag}
                 addFlag={addFlag}
                 getFlag={getFlag}
+                deleteFlag={deleteFlag}
               />
             }
           />
