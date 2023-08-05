@@ -27,10 +27,8 @@ export const SavedPage = ({ savedFlags, setSingleFlag, deleteFlag, addFlag, getF
   ));
   
   return (
-    
     <main className={routeClassName}>
-      {
-      savedFlags.length === 0 ? <p> You're doing great! No saved countries, yet.</p> :
+      {savedFlags.length === 0 ? <h2> You're doing great! No saved flags, yet.</h2> :
        allSaved}
     </main>
   );

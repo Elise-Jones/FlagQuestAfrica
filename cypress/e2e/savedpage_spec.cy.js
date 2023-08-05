@@ -8,7 +8,7 @@ describe('template spec', () => {
       .visit("http://localhost:3000/");
   });
 
-  it('Should be able to save multiple flags and be able to test knowledge on each card', () => {
+  it.only('Should be able to save multiple flags and be able to test knowledge on each card', () => {
     cy.wait("@fetchCountry1").then((interception) => {
       cy.get(".save-button").click();
       cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {

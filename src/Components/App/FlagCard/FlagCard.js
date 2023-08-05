@@ -40,7 +40,6 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   return (
     <article className="flag-card">
       <img src={flagPng} alt={altText} />
-      <div className="h">
       <div className="form-container">
       <form onSubmit={checkAnswer}>
         <input
@@ -68,9 +67,8 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
           delete
         </button>
       ) : (
-        <div><button className="save-button" onClick={saveFlag}>Save for later </button> <button onClick={showNew} className="show-new-button">Show me new </button> </div>
+        <div><button className="save-button" onClick={saveFlag}>Save For later </button> <button onClick={showNew} className="show-new-button">Show Me A New Flag </button> </div>
       )}
-      </div>
     </article>
   );
 };
