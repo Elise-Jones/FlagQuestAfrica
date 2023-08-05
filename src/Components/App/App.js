@@ -11,6 +11,7 @@ import { ErrorPage } from "../ErrorPage/ErrorPage";
 const App = () => {
   const [singleFlag, setSingleFlag] = useState([]);
   const [savedFlags, setSavedFlag] = useState([]);
+  const [error, setError] = useState(null);
 
   const addFlag = (newFlag) => {
     const isSaved = savedFlags.some(flag => flag.name === newFlag.name)
@@ -24,12 +25,25 @@ const App = () => {
   };
 
   const getFlag = () => {
-    fetchAfricanCountries().then((data) => {
-      const country = getRandomNumber(data);
-      const cleanedCountry = cleanData(country);
-      setSingleFlag(cleanedCountry);
-    });
+    fetchAfricanCountries()
+      .then((data) => {
+        const country = getRandomNumber(data);
+        const cleanedCountry = cleanData(country);
+        setSingleFlag(cleanedCountry);
+      })
+      .catch((error) => {
+        if (error instanceof Error && error.message.includes("Server error")) {
+          setError("Sorry, we encountered a server error. Please try again later.");
+        }
+      });
   };
+ 
+  
+  
+  
+  
+  
+  
 
   useEffect(() => {
     getFlag();
@@ -39,34 +53,36 @@ const App = () => {
     <div className="App">
       <NavBar />
       <h1>FlagQuest Africa</h1>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Homepage
-              singleFlag={singleFlag}
-              setSingleFlag={setSingleFlag}
-              addFlag={addFlag}
-              getFlag={getFlag}
-            />
-          }
-        />
-        <Route
-          path="/saved"
-          element={
-            <SavedPage
-              savedFlags={savedFlags}
-              singleFlag={singleFlag}
-              setSingleFlag={setSingleFlag}
-              deleteFlag={deleteFlag}
-              getFlag={getFlag}
-            />
-          }
-        />
-        <Route path="/*" element={<ErrorPage />} />
-      </Routes>
-    </div>
-  );
+      {error ?  (
+        <div className="error-message">{error}</div>) : (<Routes>
+          <Route
+            path="/"
+            element={
+              <Homepage
+                singleFlag={singleFlag}
+                setSingleFlag={setSingleFlag}
+                addFlag={addFlag}
+                getFlag={getFlag}
+              />
+            }
+          />
+          <Route
+            path="/saved"
+            element={
+              <SavedPage
+                savedFlags={savedFlags}
+                singleFlag={singleFlag}
+                setSingleFlag={setSingleFlag}
+                deleteFlag={deleteFlag}
+                getFlag={getFlag}
+              />
+            }
+          />
+          <Route path="/*" element={<ErrorPage />} />
+        </Routes>
+        )}
+      </div>
+  )
 }
 
 export default App;

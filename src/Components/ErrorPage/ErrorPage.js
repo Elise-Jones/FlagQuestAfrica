@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ErrorPage = () => {
   return (
-    <div>ErrorPage</div>
+    <div className="error-page">Sorry, this page does not exist.</div>
   )
 }
