@@ -1,5 +1,5 @@
-.flag-card {   padding: 20px;
-  /* box-sizing: border-box; */
+.flag-card {   
+  padding: 20px;
   border: 7px dashed
   #fcc96e;
   border-radius: 2em ;
@@ -11,6 +11,7 @@
   justify-content: center;
   height: 35em;
 }
+
 .answer-holder {
   display: flex;
   justify-content: center;
@@ -36,6 +37,12 @@ input {
   height: 3em;
   width: 20em;
 }
+
+input::placeholder {
+  color: black; /* Replace with your desired color */
+  font-size: 20px;
+}
+
 form {
   width: 26em;
   display: flex;
