@@ -36,13 +36,6 @@ const App = () => {
         }
       });
   };
- 
-  
-  
-  
-  
-  
-  
 
   useEffect(() => {
     getFlag();
@@ -75,6 +68,7 @@ const App = () => {
                 setSingleFlag={setSingleFlag}
                 deleteFlag={deleteFlag}
                 getFlag={getFlag}
+                addFlag={addFlag}
               />
             }
           />

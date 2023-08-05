@@ -73,7 +73,6 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
   );
 };
 
-
 FlagCard.propTypes = {
   singleFlag: PropTypes.shape({
     id: PropTypes.string,
