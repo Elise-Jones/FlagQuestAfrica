@@ -23,11 +23,12 @@ button {
   background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
   height: 3em;
   border-radius: 1em;
-  padding: 1 em;
+  padding: 1 rem;
   margin: 1em;
   font-weight: bold;
   border: none;
   outline: none;
+  font-size: 20px;
 }
 
 .h {
