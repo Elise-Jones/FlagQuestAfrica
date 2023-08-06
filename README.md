@@ -11,6 +11,8 @@ FlagQuest Africa is an application designed to test users' knowledge of African 
 - Cypress Testing
 - HTML
 - CSS
+# Preview 
+![React App - 5 August 2023 (1)](https://user-images.githubusercontent.com/119144613/258616645-d197be1f-db02-4328-9d37-ffd3f751d93d.gif)
 
 # Wins/Challenges
 - One challenge I faced was making the the app responsive to different sixed screens in the saved page. When there were no saved flags the h2 was attached to the containers grid styling. I was able to implement useLocation to dynamically change className based on what route the user was on and if there were saved flags.
