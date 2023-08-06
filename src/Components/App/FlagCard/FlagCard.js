@@ -64,7 +64,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
             deleteFlag(name);
           }}
         >
-          delete
+          Delete
         </button>
       ) : (
         <div><button className="save-button" onClick={saveFlag}>Save For later </button> <button onClick={showNew} className="show-new-button">Show Me A New Flag </button> </div>
