@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+[Flag Quest Africa](https://flag-quest-africa-9it44wc9z-elise-jones.vercel.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Abtract
+FlagQuest Africa is an application designed to test users' knowledge of African flags. The app has an interactive quiz experience, challenging users to identify and recognize the flags of various African nations. Moreover, FlagQuest Africa app includes a "Save for Later" feature, enabling users to bookmark flags they find particularly challenging or interesting. Saved flags are stored in a dedicated section, allowing users to revisit and test their knowledge of those specific flags at their convenience.
 
-## Available Scripts
+# Tech:
+- JavaScript
+- React
+- React Router
+- React PropTypes
+- Cypress Testing
+- HTML
+- CSS
+# Preview 
+![React App - 5 August 2023 (1)](https://user-images.githubusercontent.com/119144613/258616645-d197be1f-db02-4328-9d37-ffd3f751d93d.gif)
 
-In the project directory, you can run:
+# Wins/Challenges
+- One challenge I faced was making the the app responsive to different sixed screens in the saved page. When there were no saved flags the h2 was attached to the containers grid styling. I was able to implement useLocation to dynamically change className based on what route the user was on and if there were saved flags.
+- When faced with functionality issues due to state mismanagement, I proactively implemented Proptypes. This move proved invaluable as it helped me identify a critical error where I was passing an undefined value as an array in one route. Thanks to this implementation, I efficiently debugged the issue and ensured the proper handling of data throughout the app.
 
-### `npm start`
+# Plans For Future
+- Enable users to choose multiple regions worldwide for flag knowledge.
+- Implement Typescript for enhanced code maintainability.
+- Develop a tracker for consecutive correct flag identifications by users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
