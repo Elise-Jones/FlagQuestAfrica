@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('User should be able to save flags', () => {
   beforeEach(() => {
     cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {
       statusCode: 200,

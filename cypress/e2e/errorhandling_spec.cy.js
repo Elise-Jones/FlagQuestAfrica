@@ -12,21 +12,21 @@ describe("Server-side error handling", () => {
     cy.visit("http://localhost:3000/");
 
     cy.wait("@getCountries")
-    .get(".error-message").contains(
-      "Sorry, we encountered a server error. Please try again later."
-    ).should("be.visible");
+      .get(".error-message")
+      .contains("Sorry, we encountered a server error. Please try again later.")
+      .should("be.visible");
   });
-})
+});
 
-describe("isplays 404 page for non existent routes", () => {
+describe("Displays 404 page for non-existent routes", () => {
   it("Navigates to an error page when the user inputs a route that doesn't exist", () => {
     cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {
       statusCode: 200,
       fixture: "country1",
-    })
-      .as("fetchCountry1")
-      .visit("http://localhost:3000/").wait("@fetchCountry1")
-      .visit("http://localhost:3000/exist?/")
-      .get(".error-page").contains("Sorry, this page does not exist.")
-  }); 
-  })
+    }).as("fetchCountry1");
+
+    cy.visit("http://localhost:3000/").wait("@fetchCountry1").visit("http://localhost:3000/nonexistentroute")
+    .get(".error-page")
+    .contains("Sorry, this page does not exist.");
+  });
+});
