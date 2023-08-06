@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 35em;
+  height: 80%;
 }
 
 .answer-holder {
@@ -26,16 +26,17 @@
 }
 
 img {
-  height: 20em;
-  width: 25em;
+  height: 40%; 
+  width: 75%;
   border: 2px solid black;
+  margin-bottom: 10%;
 }
 
 input {
   border-radius: 1em;
   background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
-  height: 3em;
-  width: 20em;
+  height: 60%;
+  width: 90%;
 }
 
 input::placeholder {
@@ -44,8 +45,54 @@ input::placeholder {
 }
 
 form {
-  width: 26em;
+  width: 20em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+}
+
+button {
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
+  height: 60%;
+  border-radius: 1em;
+  padding: 1 rem;
+  margin: 1em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.delete-button {
+  height: 6%;
+  width: 15%
+}
+
+
+@media only screen and (max-width: 750px) {
+  .flag-card {
+    height: 70%;
+    width: 67%
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flag-card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100% ;
+    border: none;
+  }
+
+ .input {
+  width: 20%
+ }
+
+  .show-new-button, .save-button {
+    height: 60%;
+  }
+  div {
+    display: flex;
+  }
 }
