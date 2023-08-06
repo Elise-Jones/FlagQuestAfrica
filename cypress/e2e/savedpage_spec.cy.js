@@ -8,7 +8,7 @@ describe('User should be able to save flags', () => {
       .visit("http://localhost:3000/");
   });
 
-  it.only('Should be able to save multiple flags and be able to test knowledge on each card', () => {
+  it('Should be able to save multiple flags and be able to test knowledge on each card', () => {
     cy.wait("@fetchCountry1").then((interception) => {
       cy.get(".save-button").click();
       cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {
@@ -64,14 +64,15 @@ describe('User should be able to save flags', () => {
             .should("include", "https://flagcdn.com/w320/gn.png")
             .get(':nth-child(2) > img').should("have.attr", "src")
             .should("include", "https://flagcdn.com/w320/ga.png");
-          cy.get(':nth-child(1) > .form-container > :nth-child(3)')
+          // cy.get(':nth-child(1) > .form-container > :nth-child(3)')
+          cy.get(':nth-child(1) > .delete-button')
             .click()
             .get(".saved-container")
             .find(".flag-card").should("have.length", 1)
             .get('img').should("have.attr", "src")
             .should("include", "https://flagcdn.com/w320/ga.png")
             .get(".delete-button").click()
-            .get("p").contains("You're doing great! No saved countries, yet");
+            .get("h2").contains("You're doing great! No saved flags, yet");
         });
     });
   });
