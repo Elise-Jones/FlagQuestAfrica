@@ -21,7 +21,6 @@ export const Homepage = ({ singleFlag, setSingleFlag, addFlag, getFlag, alert, d
 Homepage.propTypes = {
   singleFlag: PropTypes.shape({
     id: PropTypes.string,
-    flagPic: PropTypes.string,
     name: PropTypes.string,
     altText: PropTypes.string,
     flagPng: PropTypes.string}),
