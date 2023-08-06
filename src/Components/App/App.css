@@ -1,14 +1,32 @@
+* {
+  font-family: Ysabeau Office;
+  font-weight: bold;
+}
 body {
   height: 100vh;
 }
-h1 {
-  text-align: center;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-button {
-  background-color: white;
-  height: 3em;
-  border-radius: 1em;
-  padding: 1 em;
-  margin: 1em;
+h1 {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+
+.h {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    margin-top: 10%;
+  }
 }

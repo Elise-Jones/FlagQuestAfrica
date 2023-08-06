@@ -57,18 +57,18 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
         }>Show Answer</button>
       <p>{answer}</p>
       </div>
+      </div>
       {location.pathname.includes("saved") ? (
         <button className="delete-button"
           onClick={() => {
             deleteFlag(name);
           }}
         >
-          delete
+          Delete
         </button>
       ) : (
-        <div><button className="save-button" onClick={saveFlag}>Save for later </button> <button onClick={showNew} className="show-new-button">Show me new </button> </div>
+        <div><button className="save-button" onClick={saveFlag}>Save For later </button> <button onClick={showNew} className="show-new-button">Show Me A New Flag </button> </div>
       )}
-      </div>
     </article>
   );
 };
@@ -76,7 +76,6 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
 FlagCard.propTypes = {
   singleFlag: PropTypes.shape({
     id: PropTypes.string,
-    flagPic: PropTypes.string,
     name: PropTypes.string,
     altText: PropTypes.string,
     flagPng: PropTypes.string}),

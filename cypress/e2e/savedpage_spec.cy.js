@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('User should be able to save flags', () => {
   beforeEach(() => {
     cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {
       statusCode: 200,
@@ -64,14 +64,15 @@ describe('template spec', () => {
             .should("include", "https://flagcdn.com/w320/gn.png")
             .get(':nth-child(2) > img').should("have.attr", "src")
             .should("include", "https://flagcdn.com/w320/ga.png");
-          cy.get(':nth-child(1) > .form-container > :nth-child(3)')
+          // cy.get(':nth-child(1) > .form-container > :nth-child(3)')
+          cy.get(':nth-child(1) > .delete-button')
             .click()
             .get(".saved-container")
             .find(".flag-card").should("have.length", 1)
             .get('img').should("have.attr", "src")
             .should("include", "https://flagcdn.com/w320/ga.png")
             .get(".delete-button").click()
-            .get("p").contains("You're doing great! No saved countries, yet");
+            .get("h2").contains("You're doing great! No saved flags, yet");
         });
     });
   });

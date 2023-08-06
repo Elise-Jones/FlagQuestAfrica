@@ -1,15 +1,12 @@
-import { countryData, oneCountry } from "./mockData"
-
 const cleanData = (dataObject ) => {
-  console.log("dataobject", dataObject)
-  const {  name, flags, flag } = dataObject
+  
+  const {  name, flags } = dataObject
  
   const officialName = name.official
   const altText = flags.alt
   const flagPng = flags.png
   const country = {
     id: officialName,
-    flagPic: flag,
     name: officialName,
     altText,
     flagPng

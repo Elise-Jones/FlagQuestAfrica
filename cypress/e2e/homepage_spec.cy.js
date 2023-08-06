@@ -1,4 +1,4 @@
-describe("template spec", () => {
+describe("User should be able load homepage ", () => {
   beforeEach(() => {
     cy.intercept("GET", "https://restcountries.com/v3.1/region/Africa", {
       statusCode: 200,
@@ -21,6 +21,7 @@ describe("template spec", () => {
           .get(".nav-container")
           .find(".savenav")
           .should("be.visible")
+          .get("h1").contains("FlagQuest Africa")
           .get(".homepage-container")
           .should("be.visible")
           .get(".flag-card")

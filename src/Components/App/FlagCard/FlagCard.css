@@ -1,22 +1,100 @@
-.flag-card {   padding: 20px;
-  /* box-sizing: border-box; */
-  /* border: 3px solid black; */
+.flag-card {   
+  padding: 20px;
+  border: 7px dashed
+  #fcc96e;
+  border-radius: 2em ;
   padding: 10px ;
-  width: 100% ;
+  width: 30em ;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 80%;
+  margin: 1%; 
 }
+
 .answer-holder {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 img {
-  width: 40%;
+  height: 40%; 
+  width: 75%;
+  border: 2px solid black;
+  margin-bottom: 10%;
+}
+
+input {
+  border-radius: 1em;
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
+  height: 60%;
+  width: 90%;
+}
+
+input::placeholder {
+  color: black; /* Replace with your desired color */
+  font-size: 20px;
+}
+
+form {
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-image: url(/Users/elisejones/mod3/flag-quest-africa/src/images/africapattnerback.jpeg);
+  height: 60%;
+  border-radius: 1em;
+  padding: 1 rem;
+  margin: 1em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.delete-button {
+  height: 6%;
+  width: 15%
+}
+
+
+@media only screen and (max-width: 750px) {
+  .flag-card {
+    height: 70%;
+    width: 67%
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flag-card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100% ;
+    border: none;
+  }
+
+ input {
+  width: 40%
+ }
+
+  .show-new-button, .save-button {
+    height: 60%;
+  }
+
+  div {
+    display: flex;
+  }
 }

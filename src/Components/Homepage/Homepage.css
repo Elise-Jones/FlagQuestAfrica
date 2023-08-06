@@ -1,7 +1,7 @@
 .homepage-container {
-  /* background-image: url("/Users/elisejones/mod3/flag-quest-africa/src/images/africaimg.jpeg"); */
   display: flex;
   justify-content: center;
-  padding-top: 5%;
-  width:100%
+  width: 100%; 
+  height: 40em;
 }
+
