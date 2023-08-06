@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   height: 80%;
+  margin: 1%; 
 }
 
 .answer-holder {
@@ -82,16 +83,16 @@ button {
     flex-wrap: wrap;
     height: 100%;
     width: 100% ;
-    border: none;
   }
 
- .input {
-  width: 20%
+ input {
+  width: 40%
  }
 
   .show-new-button, .save-button {
     height: 60%;
   }
+
   div {
     display: flex;
   }
