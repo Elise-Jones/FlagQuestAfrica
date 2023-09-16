@@ -9,8 +9,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  margin: 1%; 
+  max-height: 70vh;
+}
+
+h1 {
+  margin: 2px 0px ;
 }
 
 .answer-holder {
@@ -23,10 +26,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding-left: 40px; */
 }
 
 img {
+  margin: 2em;
   height: 40%; 
   width: 75%;
   border: 2px solid black;

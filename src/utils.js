@@ -1,8 +1,7 @@
 const cleanData = (dataObject ) => {
-  
-  const {  name, flags } = dataObject
+  const { name, flags } = dataObject
  
-  const officialName = name.official
+  const officialName = name.common
   const altText = flags.alt
   const flagPng = flags.png
   const country = {
