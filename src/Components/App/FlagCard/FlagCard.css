@@ -30,7 +30,7 @@ img {
   height: 40%; 
   width: 75%;
   border: 2px solid black;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 input {
@@ -56,7 +56,7 @@ button {
   background: url("/Users/elisejones/mod3/flag-quest-africa/src/Components/images/africapattnerback.jpeg");
   height: 60%;
   border-radius: 1em;
-  padding: 1 rem;
+  padding: 1em;
   margin: 1em;
   font-weight: bold;
   border: none;
