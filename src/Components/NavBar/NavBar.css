@@ -35,7 +35,7 @@
 }
 
 .nav-container {
-  background: url("../../images/africapattnerback.jpeg") ;
+  background: url("/src/Components/images/africapattnerback.jpeg") ;
 }
 @media only screen and (max-width: 700px) {
   .nav-container {

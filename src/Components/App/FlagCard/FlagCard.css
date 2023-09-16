@@ -57,7 +57,7 @@ form {
 }
 
 button {
-  background: url("../../images/africapattnerback.jpeg");
+  background: url("/src/Components/images/africapattnerback.jpeg");
   height: 60%;
   border-radius: 1em;
   padding: 1em;
