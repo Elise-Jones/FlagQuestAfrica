@@ -57,7 +57,7 @@ form {
 }
 
 button {
-  background: url("/Users/elisejones/mod3/flag-quest-africa/src/Components/images/africapattnerback.jpeg");
+  background: url("../../images/africapattnerback.jpeg");
   height: 60%;
   border-radius: 1em;
   padding: 1em;
