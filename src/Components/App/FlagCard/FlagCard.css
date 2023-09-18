@@ -1,20 +1,17 @@
 .flag-card {   
-  padding: 20px;
-  border: 7px dashed
-  #fcc96e;
+  padding: 1em;
+  border: 7px dashed #fcc96e;
   border-radius: 2em ;
-  padding: 10px ;
-  width: 30em ;
+  max-width: 25em ;
+  min-width: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: 70vh;
+  min-height: 70vh;
+  margin: 2em
 }
 
-h1 {
-  margin: 2px 0px ;
-}
 
 .answer-holder {
   display: flex;
@@ -29,9 +26,8 @@ h1 {
 }
 
 img {
+  width: 20em;
   margin: 2em;
-  height: 40%; 
-  width: 75%;
   border: 2px solid black;
   margin-bottom: 5%;
 }
@@ -58,7 +54,7 @@ form {
 
 button {
   background: url("/src/Components/images/africapattnerback.jpeg");
-  height: 60%;
+  max-height: 60%;
   border-radius: 1em;
   padding: 1em;
   margin: 1em;
@@ -66,39 +62,10 @@ button {
   border: none;
   outline: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .delete-button {
-  height: 6%;
-  width: 15%
-}
-
-
-@media only screen and (max-width: 750px) {
-  .flag-card {
-    height: 70%;
-    width: 67%
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .flag-card {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100% ;
-    border: none;
-  }
-
- input {
-  width: 40%
- }
-
-  .show-new-button, .save-button {
-    height: 60%;
-  }
-
-  div {
-    display: flex;
-  }
+  max-height: 3em;
+  cursor: pointer;
 }

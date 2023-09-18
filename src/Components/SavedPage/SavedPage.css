@@ -1,7 +1,8 @@
 .saved-container {
-  padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 50%); 
+  justify-items: center;
+  width: 100vw;
 }
 
 .no-saved {
@@ -10,25 +11,10 @@
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 1357px) {
+ @media only screen and (max-width: 1357px) {
   .saved-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .saved-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  h1 {
-    margin-top: 20%;
-  }
-  .no-saved {
-    font-size: 12px;
   }
 }
