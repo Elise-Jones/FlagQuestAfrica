@@ -1,5 +1,5 @@
 import React from "react";
-import { FlagCard } from "../App/FlagCard/FlagCard";
+import { FlagCard } from "../FlagCard/FlagCard";
 import "./SavedPage.css";
 import PropTypes from 'prop-types';
 import { useLocation } from "react-router-dom";

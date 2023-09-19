@@ -1,4 +1,4 @@
-import { FlagCard } from "../App/FlagCard/FlagCard";
+import { FlagCard } from "../FlagCard/FlagCard";
 import './Homepage.css';
 import PropTypes from 'prop-types';
 
