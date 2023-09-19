@@ -16,6 +16,7 @@ export const FlagCard = ({ singleFlag, deleteFlag, addFlag, getFlag}) => {
       userAnswer !== name ? "You are incorrect, try again." : "You are correct!";
     setAlert(alertMessage);
     setUserAnswer("");
+    setAnswer("")
   };
 
   const saveFlag = () => {

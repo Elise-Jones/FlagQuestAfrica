@@ -1,17 +1,17 @@
 .flag-card {   
-  padding: 20px;
-  border: 7px dashed
-  #fcc96e;
+  padding: 1em;
+  border: 7px dashed #fcc96e;
   border-radius: 2em ;
-  padding: 10px ;
-  width: 30em ;
+  max-width: 25em ;
+  min-width: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  margin: 1%; 
+  min-height: 70vh;
+  margin: 2em
 }
+
 
 .answer-holder {
   display: flex;
@@ -23,14 +23,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding-left: 40px; */
 }
 
 img {
-  height: 40%; 
-  width: 75%;
+  width: 20em;
+  margin: 2em;
   border: 2px solid black;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 input {
@@ -41,8 +40,9 @@ input {
 }
 
 input::placeholder {
-  color: black; /* Replace with your desired color */
+  color: black;
   font-size: 20px;
+  padding-left: 1em;
 }
 
 form {
@@ -53,48 +53,19 @@ form {
 }
 
 button {
-  background-color: #fcc96e;;
-  height: 60%;
+  background: url("/src/Components/images/africapattnerback.jpeg");
+  max-height: 60%;
   border-radius: 1em;
-  padding: 1 rem;
+  padding: 1em;
   margin: 1em;
   font-weight: bold;
   border: none;
   outline: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .delete-button {
-  height: 6%;
-  width: 15%
-}
-
-
-@media only screen and (max-width: 750px) {
-  .flag-card {
-    height: 70%;
-    width: 67%
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .flag-card {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100% ;
-    border: none;
-  }
-
- input {
-  width: 40%
- }
-
-  .show-new-button, .save-button {
-    height: 60%;
-  }
-
-  div {
-    display: flex;
-  }
+  max-height: 3em;
+  cursor: pointer;
 }
